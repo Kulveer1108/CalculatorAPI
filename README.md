@@ -10,10 +10,12 @@ ConsoleAPP - createn an Console application . This app will call the API interna
 # How to run it 
 
 Download all the files into your local machine 
+
 User need to start the API first before the console app or can set multiple projects as start up projects . 
 
 # Areas of Improvement 
 Configure the URL.
+
 Inlcude more operations 
 
 
