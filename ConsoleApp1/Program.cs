@@ -24,8 +24,10 @@ namespace ConsoleApp1
             var response = client.GetAsync("https://localhost:7025/Calculator?number1=" + number1 + "&number2=" + number2 + "&Action=" + Action);
 
             var responseContent = response.Result;
-
-            Console.WriteLine(responseContent.Content.ReadAsStringAsync().Result);
+            if (responseContent.IsSuccessStatusCode)
+            {
+                Console.WriteLine(responseContent.Content.ReadAsStringAsync().Result);
+            }
         }
     }
 }
